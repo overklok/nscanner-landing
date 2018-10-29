@@ -1,0 +1,44 @@
+.slider {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#11d0dc+0,11d0dc+100&1+0,0.44+100 */
+    background: -moz-linear-gradient(top, rgba(17,208,220,1) 0%, rgba(17,208,220,0.44) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(17,208,220,1) 0%,rgba(17,208,220,0.44) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(17,208,220,1) 0%,rgba(17,208,220,0.44) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11d0dc', endColorstr='#7011d0dc',GradientType=0 ); /* IE6-9 */
+
+    padding: 76px 72px;
+}
+
+.slider__header {
+    margin: 0;
+    width: 100%;
+}
+
+.slider__header-text {
+    margin: 0;
+    padding: 10px;
+
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.45px;
+
+    color: #ffffff;
+}
+
+.slider__colophon {
+    margin: 0;
+    padding-top: 40px;
+}
+
+.slider__colophon-text {
+    margin: 0;
+    padding: 10px;
+
+    width: 400px;
+
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+}
