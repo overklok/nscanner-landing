@@ -5,7 +5,15 @@
     background: linear-gradient(to bottom, rgba(17,208,220,1) 0%,rgba(17,208,220,0.44) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11d0dc', endColorstr='#7011d0dc',GradientType=0 ); /* IE6-9 */
 
-    padding: 76px 72px;
+    padding: 4.75em 4.5em;
+
+    min-height: calc(100vh - (4.75em * 2));
+}
+
+.slider__row {
+    margin: 0;
+    padding: 2em;
+    width: 100%;
 }
 
 .slider__header {
@@ -15,30 +23,125 @@
 
 .slider__header-text {
     margin: 0;
-    padding: 10px;
-
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.45px;
+    font-size: 2.3em;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
 
     color: #ffffff;
 }
 
 .slider__colophon {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 3em;
 }
 
 .slider__colophon-text {
     margin: 0;
-    padding: 10px;
-
-    width: 400px;
+    width: 8em;
 
     color: #ffffff;
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 600;
-    letter-spacing: 0.24px;
+    font-size: 3em;
+    line-height: 1.3em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
+}
+
+.slider__pane {
+    padding-top: 4.5em;
+}
+
+.slider__button {
+    margin: 0;
+    padding: 1em 3em;
+
+    border: solid #ffffff 2px;
+
+    color: #ffffff;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+
+/*@media (orientation: portrait) {*/
+    /*.slider {height: 100vh;}*/
+/*}*/
+
+/*@media (orientation: landscape) {*/
+    /*.slider {height: 100vw;}*/
+/*}*/
+
+@media (min-width: 0px) {
+    .slider                 {padding-left: 1em; padding-right: 1em; padding-top: 1em;}
+    .slider__header-text    {font-size: 2.0em;}
+    .slider__colophon       {padding-top: 10vh;}
+    .slider__colophon-text  {font-size: 1.8em;}
+    .slider__pane           {padding-top: 14vh;}
+    .slider__button         {font-size: 1em;}
+
+    .slider                 {min-height: calc(100vh - (4.75em + 1em));}
+}
+
+
+@media (min-width: 480px) {
+    .slider                 {padding-left: 3em; padding-right: 3em;  padding-top: 4.75em;}
+    .slider__header         {padding-top: 0;}
+    .slider__header-text    {font-size: 2.6em;}
+    .slider__colophon       {padding-top: 12vh;}
+    .slider__colophon-text  {font-size: 2.6em;}
+    .slider__pane           {padding-top: 16vh;}
+    .slider__button         {font-size: 1.2em;}
+
+    .slider                 {min-height: calc(100vh - (4.75em * 2));}
+}
+
+@media (min-width: 600px) {
+    .slider                 {padding-left: 4em; padding-right: 4em;}
+    .slider__header         {padding-top: 0;}
+    .slider__header-text    {font-size: 2.6em;}
+    .slider__colophon       {padding-top: 8.4vh;}
+    .slider__colophon-text  {font-size: 3em;}
+    .slider__pane           {padding-top: 10vh;}
+    .slider__button         {font-size: 1.2em;}
+}
+@media (min-width: 801px) {
+    .slider                 {padding-left: 4em; padding-right: 4em;}
+    .slider__header         {padding-top: 0;}
+    .slider__header-text    {font-size: 2.6em;}
+    .slider__colophon       {padding-top: 8.4vh;}
+    .slider__colophon-text  {font-size: 3.4em;}
+    .slider__pane           {padding-top: 10vh;}
+    .slider__button         {font-size: 1.2em;}
+}
+@media (min-width: 1025px) {
+    .slider                 {padding-left: 4em; padding-right: 4em;}
+    .slider__header         {padding-top: 0;}
+    .slider__header-text    {font-size: 2.6em;}
+    .slider__colophon       {padding-top: 8.4vh;}
+    .slider__colophon-text  {font-size: 4em;}
+    .slider__pane           {padding-top: 10vh;}
+    .slider__button         {font-size: 1.2em;}
+}
+
+@media (min-width: 1281px) {  }
+
+@media (min-width: 1441px) {
+    .slider                 {padding-left: 4em; padding-right: 4em;}
+    .slider__header         {padding-top: 0;}
+    .slider__header-text    {font-size: 2.6em;}
+    .slider__colophon       {padding-top: 10.4vh;}
+    .slider__colophon-text  {font-size: 6em;}
+    .slider__pane           {padding-top: 17vh;}
+    .slider__button         {font-size: 1.8em;}
+}
+
+@media (min-width: 2128px) {
+    .slider                 {padding-left: 8em; padding-right: 8em;}
+    .slider__header         {padding-top: 0;}
+    .slider__header-text    {font-size: 4.6em;}
+    .slider__colophon       {padding-top: 10.4vh;}
+    .slider__colophon-text  {font-size: 10em;}
+    .slider__pane           {padding-top: 12vh;}
+    .slider__button         {font-size: 2.8em;}
 }

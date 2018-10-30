@@ -1,0 +1,119 @@
+.description {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2b37b+0,f2c195+100&0+0,0.24+100 */
+    background: -moz-linear-gradient(top, rgba(242,179,123,0) 0%, rgba(242,193,149,0.24) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242,179,123,0) 0%,rgba(242,193,149,0.24) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242,179,123,0) 0%,rgba(242,193,149,0.24) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2b37b', endColorstr='#3df2c195',GradientType=0 ); /* IE6-9 */
+
+    padding: 4.75em 4.5em;
+
+    overflow: auto;
+}
+
+.description__column {
+    padding-left: 2em;
+    padding-right: 2em;
+    box-sizing: border-box;
+}
+
+.description__column:first-of-type {
+    padding-left: 0;
+}
+
+.description__column:last-of-type {
+    padding-right: 0;
+}
+
+.description__logo {
+    width: 100%;
+    display: block;
+
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.description__header {
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 0.5em;
+    padding: 1em 0;
+}
+
+.description__texts {
+
+}
+
+.description__text {
+
+}
+
+
+/* xs size */
+@media (min-width: 0px) {
+    .description                        {padding-left: 1em; padding-right: 1em;}
+
+    .description__column:first-of-type  {padding-left: 2em !important;}
+    .description__column:last-of-type   {padding-right: 2em !important;}
+
+    .description__logo                  {}
+    .description__header                {text-align: center; font-size: 1.6em; }
+    .description__text                  {text-align: center;}
+}
+
+/* xs size */
+@media (min-width: 320px) and (orientation: landscape) {
+    .description__column:first-of-type  {padding-left: 0 !important;}
+    .description__column:last-of-type   {padding-right: 0 !important;}
+}
+
+/* sm size */
+@media (min-width: 480px) {
+    .description                        {padding-left: 3em; padding-right: 3em;}
+
+    .description__column:first-of-type  {padding-left: 2em !important;}
+    .description__column:last-of-type   {padding-right: 2em !important;}
+}
+
+/* md size */
+@media (min-width: 600px) {
+    .description                        {padding-left: 4em; padding-right: 4em;}
+    .description__logo                  {width: 14em; margin-left: 0;}
+    .description__header                {text-align: initial; font-size: 2em;}
+    .description__text                  {text-align: initial;}
+
+    .description__column:first-of-type  {padding-left: 0 !important;}
+    .description__column:last-of-type   {padding-right: 0 !important;}
+}
+
+/* tb size */
+@media (min-width: 801px) {
+    .description                        {padding-left: 4em; padding-right: 4em;}
+    .description__logo                  {width: 18em; margin-left: 0;}
+    .description__header                {font-size: 2em;}
+    .description__text                  {font-size: 1.2em;}
+}
+
+/* lg size */
+@media (min-width: 1025px) {
+    .description                        {padding-left: 4em; padding-right: 4em;}
+    .description__logo                  {width: 100%; max-width: 300px;}
+}
+
+/* xl size */
+@media (min-width: 1281px) {
+    .description__logo                  {width: 100%; max-width: 400px;}
+    .description__header                {font-size: 2.5em;}
+    .description__text                  {font-size: 1.6em;}
+}
+
+@media (min-width: 1441px) {
+    .description                        {padding-left: 4em; padding-right: 4em;}
+}
+
+@media (min-width: 2128px) {
+    .description                        {padding-left: 8em; padding-right: 8em; padding-top: 8em; padding-bottom: 16em;}
+    .description__logo                  {width: 100%; max-width: 600px;}
+    .description__header                {font-size: 4em;}
+    .description__text                  {font-size: 3.6em;}
+}
+
