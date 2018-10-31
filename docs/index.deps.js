@@ -117,7 +117,16 @@ exports.deps = [
         "elem": "colophon"
     },
     {
-        "block": "selector"
+        "block": "slider",
+        "elem": "pager"
+    },
+    {
+        "block": "slider",
+        "elem": "pager-item"
+    },
+    {
+        "block": "slider",
+        "elem": "pager-item-line"
     },
     {
         "block": "slider",

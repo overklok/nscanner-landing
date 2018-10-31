@@ -34,17 +34,19 @@ module.exports = {
                     mix: [{elem: 'row'}],
                     content: [
                         {
-                            block: 'selector',
+                            elem: 'pager',
                             js: true,
                             items: [
-                                'Item 1',
-                                'Item 2',
-                                'Item 3'
-                            ]
+                                'Тысячи объявлений. Один клик.',
+                                'Тысячи объявлений. Один клик.',
+                                'Тысячи объявлений. Один клик.'
+                            ],
+                            attrs: {'data-target_id': 'colophon-text'}
                         },
                         {
                             elem: 'colophon-text',
-                            content: "Тысячи объявлений. Один клик."
+                            content: "Тысячи объявлений. Один клик.",
+                            attrs: {id: 'colophon-text'}
                         }
                     ]
                 },

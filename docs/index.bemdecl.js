@@ -65,7 +65,12 @@ exports.blocks = [
         ]
     },
     {
-        "name": "selector"
+        "name": "slider",
+        "elems": [
+            {
+                "name": "pager"
+            }
+        ]
     },
     {
         "name": "slider",
