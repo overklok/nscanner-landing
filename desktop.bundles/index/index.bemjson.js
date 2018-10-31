@@ -373,6 +373,55 @@ module.exports = {
                     }
                 }
             ]
+        },
+        {
+            block: 'footer',
+            content: {
+                elem: 'row',
+                mix: [{block: 'row'}, {elem: 'posts'}],
+                content: [
+                    {
+                        elem: 'column',
+                        mix: [{
+                            block: 'col',
+                            mods: {'xs': '100', 'md': 'third'}
+                        }],
+                        content: {
+                            elem: 'copyright',
+                            content: '© 2018. Все права защищены.'
+                        },
+                    },
+                    {
+                        elem: 'column',
+                        mix: [{
+                            block: 'col',
+                            mods: {'xs': '100', 'md': 'third'}
+                        }],
+                        content: {
+                            elem: 'up',
+                            content: 'Наверх'
+                        }
+                    },
+                    {
+                        elem: 'column',
+                        mix: [{
+                            block: 'col',
+                            mods: {'xs': '100', 'md': 'third'}
+                        }],
+                        content: {
+                            elem: 'icons',
+                            icons: [
+                                {img_url: 'images/icons/facebook.svg', href_url: 'https://facebook.com/'},
+                                {img_url: 'images/icons/twitter.svg', href_url: 'https://twitter.com/'},
+                                {img_url: 'images/icons/googleplus.svg', href_url: 'https://google.com/'},
+                                {img_url: 'images/icons/behance.svg', href_url: 'https://behance.com/'},
+                                {img_url: 'images/icons/pinterest.svg', href_url: 'https://pinterest.com/'},
+                                {img_url: 'images/icons/instagram.svg', href_url: 'https://instagram.com/'}
+                            ]
+                        }
+                    }
+                ]
+            }
         }
     ]
 };
