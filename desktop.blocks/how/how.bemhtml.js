@@ -8,5 +8,16 @@ block('how')(
                 content: this.ctx.content
             }
         })
+    ),
+
+    elem('comment')(
+        content()(function() {
+            return this.ctx.lines.map(function (item) {
+                return {
+                    elem: 'commtext',
+                    content: item
+                }
+            })
+        })
     )
 );

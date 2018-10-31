@@ -290,6 +290,10 @@ exports.deps = [
     },
     {
         "block": "how",
+        "elem": "comment"
+    },
+    {
+        "block": "how",
         "elem": "subtitle"
     },
     {

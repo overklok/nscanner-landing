@@ -544,7 +544,7 @@ html, body, .page {
 }
 
 .how__column {
-
+    position: relative;
 }
 
 .how__subtitle {
@@ -558,8 +558,30 @@ html, body, .page {
     text-transform: uppercase;
 }
 
+.how__comment {
+   position: absolute;
+    width: 50%;
+    height: 35%;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    padding: 1em 0 2em 0.6em;
+}
+
+.how__commtext {
+    text-transform: uppercase;
+    color: #ffffff;
+
+    font-size: 0.9em;
+
+    padding-bottom: 0.3em;
+}
+
 @media (min-width: 0px) {
-    .how__row               {padding: 3em 2em; padding-bottom: 1em;}
+    .how__row               {padding: 3em 2em;}
     .how__subtitle          {padding: 0 4em;}
     .how__text              {font-size: 1.2em; text-align: center;}
     .how__column            {height: 160px;}
@@ -620,6 +642,10 @@ html, body, .page {
     max-width: 80%;
   /*max-height: 250px;*/
     height: 100%;
+
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .chart__circle {

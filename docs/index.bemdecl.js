@@ -393,6 +393,14 @@ exports.blocks = [
         "name": "how",
         "elems": [
             {
+                "name": "comment"
+            }
+        ]
+    },
+    {
+        "name": "how",
+        "elems": [
+            {
                 "name": "subtitle"
             }
         ]

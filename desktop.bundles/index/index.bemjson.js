@@ -205,9 +205,10 @@ module.exports = {
                                 block: 'col',
                                 mods: {'xs': '100', 'md': '25'}
                             }],
-                            content: {
-                                block: 'chart'
-                            }
+                            content: [
+                                {block: 'chart', bg_url: 'images/how/N-Navigatsia-01.png'},
+                                {elem: 'comment', lines: ['Зайти на', 'N-scanner.ru']}
+                            ]
                         },
                         {
                             elem: 'column',
@@ -215,9 +216,10 @@ module.exports = {
                                 block: 'col',
                                 mods: {'xs': '100', 'md': '25'}
                             }],
-                            content: {
-                                block: 'chart'
-                            }
+                            content: [
+                                {block: 'chart', bg_url: 'images/how/N-Navigatsia-02.png'},
+                                {elem: 'comment', lines: ['Настроить', 'фильтр']}
+                            ]
                         },
                         {
                             elem: 'column',
@@ -225,9 +227,10 @@ module.exports = {
                                 block: 'col',
                                 mods: {'xs': '100', 'md': '25'}
                             }],
-                            content: {
-                                block: 'chart'
-                            }
+                            content: [
+                                {block: 'chart', bg_url: 'images/how/N-Navigatsia-03.png'},
+                                {elem: 'comment', lines: ['Выбрать', 'объявление']}
+                            ]
                         },
                         {
                             elem: 'column',
@@ -235,9 +238,10 @@ module.exports = {
                                 block: 'col',
                                 mods: {'xs': '100', 'md': '25'}
                             }],
-                            content: {
-                                block: 'chart'
-                            }
+                            content: [
+                                {block: 'chart', bg_url: 'images/how/N-Navigatsia-04.png'},
+                                {elem: 'comment', lines: ['Перейти на', 'сайт агентства']}
+                            ]
                         }
                     ]
                 },

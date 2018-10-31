@@ -9,7 +9,8 @@ block('chart')(
 
     attrs()(function() {
         return {
-            'viewBox': "0 0 36 36"
+            'viewBox': "0 0 36 36",
+            'style': 'background-image: url(\'' + this.ctx.bg_url +  '\')'
         }
     }),
 
