@@ -149,15 +149,20 @@
 }
 
 @keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 
 .slider__colophon-text {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation-name: slideInFromTop;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    animation-delay: 2s;
 }

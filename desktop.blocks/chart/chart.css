@@ -15,6 +15,9 @@
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
+}
+
+.chart__circle.visible {
     animation: progress 1s ease-out forwards;
 }
 
