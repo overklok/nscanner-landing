@@ -27,6 +27,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "scroll-trigger"
+    },
+    {
         "name": "slider"
     },
     {
@@ -85,6 +88,42 @@ exports.blocks = [
         "elems": [
             {
                 "name": "button"
+            }
+        ]
+    },
+    {
+        "name": "slider",
+        "elems": [
+            {
+                "name": "button",
+                "mods": [
+                    {
+                        "name": "scrollToId",
+                        "vals": [
+                            {
+                                "name": "description"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "slider",
+        "elems": [
+            {
+                "name": "button",
+                "mods": [
+                    {
+                        "name": "mod1",
+                        "vals": [
+                            {
+                                "name": "e"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

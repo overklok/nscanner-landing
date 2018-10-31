@@ -4150,6 +4150,49 @@ $(function() {
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.js */
+/* begin: ../../desktop.blocks/scroll-trigger/scroll-trigger.js */
+modules.define('scroll-trigger', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declBlock(this.name, {
+    onSetMod: {
+        js: {
+            inited: function() {
+                var trigger = new ScrollTrigger({once: true});
+            }
+        }
+    }
+}));
+
+});
+
+/* end: ../../desktop.blocks/scroll-trigger/scroll-trigger.js */
+/* begin: ../../desktop.blocks/slider/__button/slider__button.js */
+modules.define('slider__button', ['i-bem-dom'], function(provide, bemDom) {
+
+    console.log(this);
+
+provide(bemDom.declElem('slider', 'button', {
+    onSetMod: {
+        js: {
+            inited: function() {
+                console.log(this);
+                this._domEvents().on('click', this._onClick);
+            },
+        },
+
+        'mod1': function(modName, modVal, prevModVal) {
+            console.log('m1 trig');
+        }
+    },
+
+    _onClick: function () {
+        console.log("ONCLK", this.ctx);
+    }
+}));
+
+});
+
+/* end: ../../desktop.blocks/slider/__button/slider__button.js */
 /* begin: ../../node_modules/bem-core/common.blocks/loader/_type/loader_type_js.js */
 /**
  * @module loader_type_js

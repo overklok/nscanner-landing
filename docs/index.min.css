@@ -167,6 +167,43 @@ html, body, .page {
     .slider__button         {font-size: 2.8em;}
 }
 
+@-webkit-keyframes slideInFromTop {
+    0% {
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slider__colophon-text {
+    -webkit-animation-name: slideInFromTop;
+            animation-name: slideInFromTop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+            animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+
 .description {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2b37b+0,f2c195+100&0+0,0.24+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(242,179,123,0)),to(rgba(242,193,149,0.24)));
@@ -568,7 +605,7 @@ html, body, .page {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
-    padding: 1em 0 2em 0.6em;
+    padding: 1em 0 0 0.6em;
 }
 
 .how__commtext {
@@ -598,6 +635,8 @@ html, body, .page {
     .how__subtitle          {padding: 0 8em;}
     .how__text              {font-size: 1.4em; text-align: initial;}
     .how__column            {height: 220px;}
+    .how__commtext          {font-size: 0.55em;}
+    .how__comment           {width: 55%;}
 
     .how__hint               {top: 3em; left: 0;}
 }
@@ -606,6 +645,8 @@ html, body, .page {
     .how__row               {padding: 4em; padding-bottom: 1em;}
     .how__subtitle          {padding: 0 8em;}
     .how__text              {font-size: 1.7em; text-align: initial;}
+    .how__commtext          {font-size: 0.65em;}
+    .how__comment           {width: 50%;}
 }
 
 @media (min-width: 1025px) {
@@ -613,6 +654,7 @@ html, body, .page {
     .how__subtitle          {padding: 0 10em;}
     .how__column            {height: 250px;}
     .how__text              {font-size: 2em; text-align: initial;}
+    .how__commtext          {font-size: 0.88em;}
 
     .how__hint              {top: 3em; left: 2em;}
 }
@@ -622,6 +664,8 @@ html, body, .page {
     .how__subtitle          {padding: 0 12.8em;}
     .how__column            {height: 500px;}
     .how__text              {font-size: 3em; text-align: initial;}
+    .how__commtext          {font-size: 1.35em;}
+    .how__comment           {width: 55%; padding: 2em 0 0 1.5em;}
 
     .how__hint              {top: 4em; left: 4em;}
 }
@@ -632,6 +676,8 @@ html, body, .page {
     .how__subtitle          {padding: 0 20em;}
     .how__column            {height: 600px;}
     .how__text              {font-size: 5em; text-align: initial;}
+    .how__commtext          {font-size: 1.8em;}
+    .how__comment           {width: 50%; padding: 2em 0 0 2em;}
 
     .how__hint              {top: 8em; left: 8em;}
 }
@@ -643,16 +689,19 @@ html, body, .page {
   /*max-height: 250px;*/
     height: 100%;
 
-    background-size: 50%;
+    background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .chart__circle {
-    stroke: #4CC790;
+    stroke: #67dddd;
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
+}
+
+.chart__circle.visible {
     -webkit-animation: progress 1s ease-out forwards;
             animation: progress 1s ease-out forwards;
 }

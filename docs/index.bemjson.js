@@ -6,11 +6,15 @@ module.exports = {
         {elem: 'meta', attrs: {name: 'description', content: ''}},
         {elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}},
         {elem: 'css', url: 'index.min.css'},
+        {elem: 'js', url: 'vendor/scrolltrigger-classes/ScrollTrigger.js'}
     ],
-    scripts: [
-        {elem: 'js', url: 'index.min.js'}
-    ],
+    js: true,
+    scripts: [{elem: 'js', url: 'index.min.js'}],
     content: [
+        {
+            block: 'scroll-trigger',
+            js: true
+        },
         {
             block: 'slider',
             content: [
@@ -46,13 +50,17 @@ module.exports = {
                     mix: [{elem: 'row'}],
                     content: {
                         elem: 'button',
-                        content: 'Подробнее'
+                        js: true,
+                        content: 'Подробнее',
+                        elemMods: {scrollToId: 'description', mod1: 'e'},
+                        mod1: 'hui',
                     }
                 }
             ]
         },
         {
             block: 'description',
+            id: 'description',
             content: [
                 {
                     elem: 'row',
