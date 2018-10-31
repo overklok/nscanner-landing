@@ -147,3 +147,17 @@
     .slider__pane           {padding-top: 12vh;}
     .slider__button         {font-size: 2.8em;}
 }
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.slider__colophon-text {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}

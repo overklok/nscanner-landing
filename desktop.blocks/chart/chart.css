@@ -5,13 +5,13 @@
   /*max-height: 250px;*/
     height: 100%;
 
-    background-size: 50%;
+    background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .chart__circle {
-    stroke: #4CC790;
+    stroke: #67dddd;
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
