@@ -8,6 +8,8 @@
     padding: 4.75em 4.5em;
 
     min-height: calc(100vh - (4.75em * 2));
+
+    overflow: hidden;
 }
 
 .slider__row {

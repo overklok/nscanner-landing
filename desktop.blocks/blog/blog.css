@@ -1,9 +1,56 @@
 .blog {
     position: relative;
+
+    padding: 4em 4em;
+    box-sizing: border-box;
+}
+
+.blog__header {
+    padding: 0.6em 0;
+    font-size: 2.5em;
+
+    text-transform: uppercase;
+
+    width: 8em;
+    color: #000000;
 }
 
 .blog__column {
-    height: 300px;
+
+}
+
+.blog__posts {
+    /*padding: 4em;*/
+}
+
+.blog__post {
+    padding: 0 4em;
+}
+
+.blog__image {
+    width: 100%;
+    max-height: 280px;
+}
+
+.blog__cont {
+    padding: 0 1em;
+}
+
+.blog__heading {
+    padding: 1em 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.blog__date {
+    text-transform: uppercase;
+}
+
+.blog__text {
+    padding: 1em 0;
+    line-height: 1.8em;
+    text-align: justify;
 }
 
 .blog__hint {
@@ -15,20 +62,86 @@
 }
 
 @media (min-width: 0px) {
+    .blog                       {padding: 4em 4em;}
+    .blog__header               {padding: 0.6em 3.2em; font-size: 1.2em;}
+
+    .blog__post                 {padding: 0 0;}
+    .blog__heading              {padding: 0 0 0.2em 0; font-size: 0.8em;}
+    .blog__date                 {font-size: 0.8em;}
+    .blog__text                 {line-height: 1.3em; font-size: 0.8em;}
+
+    .blog__image                {width: 40%; max-height: none; float: left; margin-right: 1em;}
 }
+
 @media (min-width: 320px) {
 }
+
 @media (min-width: 480px) {
+    .blog                       {padding: 4em 4em;}
+    .blog__header               {padding: 0.6em 2.6em; font-size: 1.2em;}
 }
+
 @media (min-width: 600px) {
-    .blog__hint               {top: 3em; left: 0;}
+    .blog                       {padding: 4em 3em;}
+    .blog__header               {padding: 0.6em 3.4em; font-size: 1.4em;}
+
+    .blog__post                 {padding: 0 0.5em;}
+    .blog__heading              {padding: 1em 0; font-size: 0.6em;}
+    .blog__date                 {font-size: 0.6em;}
+    .blog__text                 {padding: 1em 0; line-height: 1.2em; font-size: 0.6em;}
+
+    .blog__image                {width: 100%; max-height: 280px; float: none; margin: 0;}
+
+    .blog__hint                 {top: 3em; left: 0;}
+
 }
 @media (min-width: 801px) {
+    .blog                       {padding: 4em 2em;}
+    .blog__header               {padding: 0.6em 4.15em; font-size: 1.4em;}
+
+    .blog__post                 {padding: 0 2em;}
+    .blog__heading              {padding: 1em 0; font-size: 0.8em;}
+    .blog__date                 {font-size: 0.8em;}
+    .blog__text                 {padding: 1em 0; line-height: 1.2em; font-size: 0.8em;}
 }
+
 @media (min-width: 1025px) {
+    .blog                       {padding: 4em 4em;}
+    .blog__header               {padding: 0.8em 2.85em; font-size: 2em;}
+
+    .blog__post                 {padding: 0 1.8em;}
+    .blog__heading              {padding: 1em 0; font-size: 1.2em;}
+    .blog__date                 {font-size: 1em;}
+    .blog__text                 {padding: 1em 0; line-height: 1.4em; font-size: 1em;}
+
+    .blog__hint                 {top: 3em; left: 2em;}
 }
+
 @media (min-width: 1441px) {
+    .blog                       {padding: 6em 4em;}
+    .blog__header               {padding: 0.6em 2.95em; font-size: 3em;}
+
+    .blog__post                 {padding: 0 4em;}
+
+    .blog__image                {max-height: 280px;}
+    .blog__cont                 {padding: 0 1em;}
+    .blog__heading              {padding: 1em 0; font-size: 1.2em;}
+    .blog__date                 {font-size: 1em;}
+    .blog__text                 {padding: 1em 0; line-height: 1.8em; font-size: 1.3em;}
+
+    .blog__hint                 {top: 5em; left: 4em;}
 }
+
 @media (min-width: 2128px) {
-    .blog__hint              {top: 8em; left: 4em;}
+    .blog                       {padding: 12em 12em;}
+    .blog__image                {max-height: 600px;}
+
+    .blog__header               {padding: 0.6em 1.5em; font-size: 5em;}
+
+    .blog__post                 {padding: 0 6em;}
+    .blog__heading              {padding: 1em 0; font-size: 1.6em;}
+    .blog__date                 {font-size: 1.6em;}
+    .blog__text                 {padding: 1em 0; line-height: 1.8em; font-size: 1.6em;}
+
+    .blog__hint                 {top: 8em; left: 8em;}
 }

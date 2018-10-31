@@ -269,13 +269,28 @@ module.exports = {
                     mix: [{block: 'row'}],
                     content: [
                         {
+                            elem: 'header',
+                            content: 'Последние новости'
+                        }
+                    ]
+                },
+                {
+                    elem: 'row',
+                    mix: [{block: 'row'}, {elem: 'posts'}],
+                    content: [
+                        {
                             elem: 'column',
                             mix: [{
                                 block: 'col',
                                 mods: {'xs': '100', 'md': 'third'}
                             }],
                             content: {
-                                block: 'post'
+                                elem: 'post',
+                                url: 'images/blog/1.png',
+                                date: 'Октябрь, 10. 2018',
+                                heading: 'Почему дорожает вторичка?',
+                                text:   'Цены на вторичном рынке недвижимости столицы пошли в рост, а из экспозиции ' +
+                                        'стали исчезать дешевые предложения, да и в целом объем... '
                             }
                         },
                         {
@@ -285,7 +300,12 @@ module.exports = {
                                 mods: {'xs': '100', 'md': 'third'}
                             }],
                             content: {
-                                block: 'post'
+                                elem: 'post',
+                                url: 'images/blog/2.png',
+                                date: 'Октябрь, 10. 2018',
+                                heading: 'Проверка квартиры: как это?',
+                                text:   'Быть беспечным в этом отношении нельзя, особенно если недвижимость ' +
+                                        'подбирается на вторичном рынке. Мошеннические схемы...'
                             }
                         },
                         {
@@ -295,7 +315,12 @@ module.exports = {
                                 mods: {'xs': '100', 'md': 'third'}
                             }],
                             content: {
-                                block: 'post'
+                                elem: 'post',
+                                url: 'images/blog/3.png',
+                                date: 'Октябрь, 10. 2018',
+                                heading: 'Собянин дал добро.',
+                                text:   'Одобрены проекты на 79 тысяч квадратных метров недвижимости, из них 28 тысяч ' +
+                                        '- производственные базы и складские помещения...'
                             }
                         }
                     ]

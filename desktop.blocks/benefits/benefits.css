@@ -83,12 +83,15 @@
     .benefits__column           {height: 46vw;}
 
     .benefits__label            {bottom: 2em; left: 2em; font-size: 1.25em;}
+
+    .benefits__hint             {top: 3em; left: 2em;}
 }
 
 @media (min-width: 1441px) {
     .benefits__column           {height: 34vw;}
 
     .benefits__label            {bottom: 1.6em; left: 2em; font-size: 1.5em;}
+    .benefits__hint             {top: 4em; left: 4em;}
 }
 
 @media (min-width: 2128px) {
@@ -100,6 +103,6 @@
     .benefits__image_imgnum_3   {width: 130%;}
 
     .benefits__label            {bottom: 2em; left: 2em; font-size: 3em;}
-    .benefits__hint             {top: 8em; left: 4em;}
+    .benefits__hint             {top: 8em; left: 8em;}
 }
 

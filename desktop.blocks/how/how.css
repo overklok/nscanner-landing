@@ -56,7 +56,7 @@
     .how__text              {font-size: 1.4em; text-align: initial;}
     .how__column            {height: 220px;}
 
-    .how_hint               {top: 3em; left: 0;}
+    .how__hint               {top: 3em; left: 0;}
 }
 @media (min-width: 801px) {
     .how__row               {padding: 4em; padding-bottom: 1em;}
@@ -65,22 +65,26 @@
 }
 @media (min-width: 1025px) {
     .how__row               {padding: 4em; padding-bottom: 2em;}
-    .how__subtitle          {padding: 0 8em;}
+    .how__subtitle          {padding: 0 10em;}
     .how__column            {height: 250px;}
     .how__text              {font-size: 2em; text-align: initial;}
+
+    .how__hint              {top: 3em; left: 2em;}
 }
 @media (min-width: 1441px) {
     .how__row               {padding: 4em; padding-bottom: 1em;}
-    .how__subtitle          {padding: 0 8em;}
+    .how__subtitle          {padding: 0 12.8em;}
     .how__column            {height: 500px;}
     .how__text              {font-size: 3em; text-align: initial;}
+
+    .how__hint              {top: 4em; left: 4em;}
 }
 @media (min-width: 2128px) {
     .how                    {padding-bottom: 8em;}
     .how__row               {padding: 16em 5em; padding-bottom: 5em;}
-    .how__subtitle          {padding: 0 16em;}
+    .how__subtitle          {padding: 0 20em;}
     .how__column            {height: 600px;}
     .how__text              {font-size: 5em; text-align: initial;}
 
-    .how__hint              {top: 8em; left: 4em;}
+    .how__hint              {top: 8em; left: 8em;}
 }
