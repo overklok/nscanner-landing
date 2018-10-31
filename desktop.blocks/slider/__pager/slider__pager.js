@@ -23,6 +23,8 @@ provide(bemDom.declElem('slider', 'pager', {
         this.ausnum = -1;
         var self = this;
 
+        self._makeAutoSwitch(items);
+
         this.aus = setInterval(function() {
             self._makeAutoSwitch(items);
         }, INTVL);

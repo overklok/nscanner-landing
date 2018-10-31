@@ -46,7 +46,7 @@ module.exports = {
                         {
                             elem: 'colophon-text',
                             content: "Тысячи объявлений. Один клик.",
-                            attrs: {id: 'colophon-text'}
+                            attrs: {id: 'colophon-text', class: 'show'}
                         }
                     ]
                 },

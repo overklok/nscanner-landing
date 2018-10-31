@@ -8,7 +8,8 @@ block('slider').elem('pager')(
                 js: true,
                 content: [
                     {
-                        elem: 'pager-item-line'
+                        elem: 'pager-item-line',
+                        elemMods: {hidden: true}
                     },
                     {
                         elem: 'pager-item-text',
