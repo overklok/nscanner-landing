@@ -4169,30 +4169,55 @@ provide(bemDom.declBlock(this.name, {
 /* begin: ../../desktop.blocks/slider/__button/slider__button.js */
 modules.define('slider__button', ['i-bem-dom'], function(provide, bemDom) {
 
-    console.log(this);
-
 provide(bemDom.declElem('slider', 'button', {
     onSetMod: {
         js: {
             inited: function() {
-                console.log(this);
                 this._domEvents().on('click', this._onClick);
             },
         },
-
-        'mod1': function(modName, modVal, prevModVal) {
-            console.log('m1 trig');
-        }
     },
 
     _onClick: function () {
-        console.log("ONCLK", this.ctx);
+        var id = this.domElem.data('scroll_to_id');
+
+        var el = document.getElementById(id);
+
+        if (el) {
+            el.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
     }
 }));
 
 });
 
 /* end: ../../desktop.blocks/slider/__button/slider__button.js */
+/* begin: ../../desktop.blocks/footer/__up/footer__up.js */
+modules.define('footer__up', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declElem('footer', 'up', {
+    onSetMod: {
+        js: {
+            inited: function() {
+                this._domEvents().on('click', this._onClick);
+            }
+        }
+    },
+
+    _onClick: function () {
+        var id = this.domElem.data('scroll_to_id');
+
+        var el = document.getElementById(id);
+
+        if (el) {
+            el.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+    }
+}));
+
+});
+
+/* end: ../../desktop.blocks/footer/__up/footer__up.js */
 /* begin: ../../node_modules/bem-core/common.blocks/loader/_type/loader_type_js.js */
 /**
  * @module loader_type_js

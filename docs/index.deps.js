@@ -132,16 +132,6 @@ exports.deps = [
         "elem": "button"
     },
     {
-        "block": "slider",
-        "elem": "button",
-        "mod": "scrollToId"
-    },
-    {
-        "block": "slider",
-        "elem": "button",
-        "mod": "mod1"
-    },
-    {
         "block": "description"
     },
     {
@@ -410,18 +400,6 @@ exports.deps = [
         "elem": "init",
         "mod": "auto",
         "val": true
-    },
-    {
-        "block": "slider",
-        "elem": "button",
-        "mod": "scrollToId",
-        "val": "description"
-    },
-    {
-        "block": "slider",
-        "elem": "button",
-        "mod": "mod1",
-        "val": "e"
     },
     {
         "block": "benefits",

@@ -17,6 +17,9 @@ module.exports = {
         },
         {
             block: 'slider',
+            attrs: {
+                id: 'slider'
+            },
             content: [
                 {
                     elem: 'header',
@@ -52,15 +55,18 @@ module.exports = {
                         elem: 'button',
                         js: true,
                         content: 'Подробнее',
-                        elemMods: {scrollToId: 'description', mod1: 'e'},
-                        mod1: 'hui',
+                        attrs: {
+                            'data-scroll_to_id': 'description'
+                        }
                     }
                 }
             ]
         },
         {
             block: 'description',
-            id: 'description',
+            attrs: {
+                id: 'description'
+            },
             content: [
                 {
                     elem: 'row',
@@ -413,7 +419,11 @@ module.exports = {
                         }],
                         content: {
                             elem: 'up',
-                            content: 'Наверх'
+                            js: true,
+                            content: 'Наверх',
+                            attrs: {
+                                'data-scroll_to_id': 'slider'
+                            }
                         }
                     },
                     {

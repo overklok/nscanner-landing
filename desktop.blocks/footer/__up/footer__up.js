@@ -1,12 +1,12 @@
-modules.define('slider__button', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('footer__up', ['i-bem-dom'], function(provide, bemDom) {
 
-provide(bemDom.declElem('slider', 'button', {
+provide(bemDom.declElem('footer', 'up', {
     onSetMod: {
         js: {
             inited: function() {
                 this._domEvents().on('click', this._onClick);
-            },
-        },
+            }
+        }
     },
 
     _onClick: function () {
