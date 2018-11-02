@@ -8,7 +8,8 @@
 
     width: 50px;
 
-    cursor: pointer;
+    /*cursor: pointer;*/
+    pointer-events: none;
 }
 
 .slider__pager-item_selected {
