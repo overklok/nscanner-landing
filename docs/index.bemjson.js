@@ -37,15 +37,15 @@ module.exports = {
                             elem: 'pager',
                             js: true,
                             items: [
-                                'Тысячи объявлений. Один клик.',
-                                'Тысячи объявлений. Один клик.',
-                                'Тысячи объявлений. Один клик.'
+                                'Тысячи объявлений',
+                                'Быстрый поиск',
+                                'Один клик'
                             ],
                             attrs: {'data-target_id': 'colophon-text'}
                         },
                         {
                             elem: 'colophon-text',
-                            content: "Тысячи объявлений. Один клик.",
+                            content: "Тысячи объявлений",
                             attrs: {id: 'colophon-text', class: 'show'}
                         }
                     ]
