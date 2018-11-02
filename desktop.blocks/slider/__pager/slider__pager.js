@@ -20,7 +20,7 @@ provide(bemDom.declElem('slider', 'pager', {
     },
 
     _runAutoSwitch: function(items) {
-        this.ausnum = -1;
+        this.ausnum = 0;
         var self = this;
 
         self._makeAutoSwitch(items);
