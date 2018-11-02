@@ -14,10 +14,11 @@ html, body, .page {
 }
 
 .slider {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#11d0dc+0,11d0dc+100&1+0,0.44+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17,208,220,1)),to(rgba(17,208,220,0.44)));
-    background: linear-gradient(to bottom, rgba(17,208,220,1) 0%,rgba(17,208,220,0.44) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11d0dc', endColorstr='#7011d0dc',GradientType=0 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#255c75+0,92c1d7+100 */
+    background: rgb(37,92,117); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(37,92,117,1)),to(rgba(146,193,215,1)));
+    background: linear-gradient(to bottom, rgba(37,92,117,1) 0%,rgba(146,193,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#255c75', endColorstr='#92c1d7',GradientType=0 ); /* IE6-9 */
 
     padding: 4.75em 4.5em;
 
@@ -816,25 +817,38 @@ html, body, .page {
             animation: progress 1s 1s ease-out forwards;
 
     stroke-dasharray: 0 100;
+    opacity: 0;
 }
 
 @-webkit-keyframes progress {
     0% {
         stroke-dasharray: 0 100;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
     }
 
     100% {
         stroke-dasharray: 100 100;
+        opacity: 1;
     }
 }
 
 @keyframes progress {
     0% {
         stroke-dasharray: 0 100;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
     }
 
     100% {
         stroke-dasharray: 100 100;
+        opacity: 1;
     }
 }
 
