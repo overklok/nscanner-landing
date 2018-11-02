@@ -1,0 +1,121 @@
+.how {
+    position: relative;
+
+    background-color: #000000;
+
+    padding-bottom: 4em;
+}
+
+
+.how__row {
+    padding: 4em;
+    padding-bottom: 1em;
+}
+
+.how__column {
+    padding: 1em;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.how__hint {
+    padding: 0 4em;
+
+    position: absolute;
+    top: 3em;
+    left: 0;
+}
+
+.how__column {
+    position: relative;
+}
+
+.how__subtitle {
+    padding: 0 8em;
+}
+
+.how__text {
+    color: #ffffff;
+
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.how__comment {
+   position: absolute;
+    width: 50%;
+    height: 35%;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    box-sizing: border-box;
+
+    padding: 1em 0 0 0.6em;
+}
+
+.how__commtext {
+    text-transform: uppercase;
+    color: #ffffff;
+
+    font-size: 0.9em;
+
+    padding-bottom: 0.3em;
+}
+
+@media (min-width: 0px) {
+    .how__row               {padding: 3em 2em;}
+    .how__subtitle          {padding: 0 4em;}
+    .how__text              {font-size: 1.2em; text-align: center;}
+    .how__column            {height: 160px;}
+}
+@media (min-width: 320px) {
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 600px) {
+    .how__row               {padding: 2em; padding-bottom: 1em;}
+    .how__subtitle          {padding: 0 8em;}
+    .how__text              {font-size: 1.4em; text-align: initial;}
+    .how__column            {height: 220px;}
+    .how__commtext          {font-size: 0.55em;}
+    .how__comment           {width: 55%;}
+
+    .how__hint               {top: 3em; left: 0;}
+}
+@media (min-width: 801px) {
+    .how__row               {padding: 4em; padding-bottom: 1em;}
+    .how__subtitle          {padding: 0 8em;}
+    .how__text              {font-size: 1.7em; text-align: initial;}
+    .how__commtext          {font-size: 0.65em;}
+    .how__comment           {width: 50%;}
+}
+@media (min-width: 1025px) {
+    .how__row               {padding: 4em; padding-bottom: 2em;}
+    .how__subtitle          {padding: 0 10em;}
+    .how__column            {height: 250px;}
+    .how__text              {font-size: 2em; text-align: initial;}
+    .how__commtext          {font-size: 0.88em;}
+
+    .how__hint              {top: 3em; left: 2em;}
+}
+@media (min-width: 1441px) {
+    .how__row               {padding: 4em; padding-bottom: 1em;}
+    .how__subtitle          {padding: 0 12.8em;}
+    .how__column            {height: 500px;}
+    .how__text              {font-size: 3em; text-align: initial;}
+    .how__commtext          {font-size: 1.35em;}
+    .how__comment           {width: 55%; padding: 2em 0 0 1.5em;}
+
+    .how__hint              {top: 4em; left: 4em;}
+}
+@media (min-width: 2128px) {
+    .how                    {padding-bottom: 8em;}
+    .how__row               {padding: 16em 5em; padding-bottom: 5em;}
+    .how__subtitle          {padding: 0 20em;}
+    .how__column            {height: 600px;}
+    .how__text              {font-size: 5em; text-align: initial;}
+    .how__commtext          {font-size: 1.8em;}
+    .how__comment           {width: 50%; padding: 2em 0 0 2em;}
+
+    .how__hint              {top: 8em; left: 8em;}
+}
