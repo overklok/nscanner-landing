@@ -27,6 +27,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "noscript"
+    },
+    {
         "name": "scroll-trigger"
     },
     {

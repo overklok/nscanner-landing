@@ -6,7 +6,29 @@ module.exports = {
         {elem: 'meta', attrs: {name: 'description', content: ''}},
         {elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}},
         {elem: 'css', url: 'index.min.css'},
-        {elem: 'js', url: 'vendor/scrolltrigger-classes/ScrollTrigger.js'}
+        {elem: 'js', url: 'vendor/scrolltrigger-classes/ScrollTrigger.js'},
+        {elem: 'js', content:
+                '(function (d, w, c) { (w[c] = w[c] || []).push(' +
+                    'function() { ' +
+                        'try { ' +
+                            'w.yaCounter51050828 = new Ya.Metrika2({ ' +
+                                'id:51050828, ' +
+                                'clickmap:true, ' +
+                                'trackLinks:true, ' +
+                                'accurateTrackBounce:true ' +
+                        '}); } ' +
+                        'catch(e) { } }); ' +
+                    'var n = d.getElementsByTagName("script")[0], ' +
+                    's = d.createElement("script"), ' +
+                    'f = function () { ' +
+                        'n.parentNode.insertBefore(s, n); }; ' +
+                        's.type = "text/javascript"; s.async = true; ' +
+                        's.src = "https://mc.yandex.ru/metrika/tag.js"; ' +
+                        'if (w.opera == "[object Opera]") { ' +
+                            'd.addEventListener("DOMContentLoaded", f, false); ' +
+                        '} else { f(); } })' +
+                '(document, window, "yandex_metrika_callbacks2"); '},
+        {block: 'noscript'}
     ],
     js: true,
     scripts: [{elem: 'js', url: 'index.min.js'}],

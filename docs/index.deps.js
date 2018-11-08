@@ -95,6 +95,9 @@ exports.deps = [
         "elem": "meta"
     },
     {
+        "block": "noscript"
+    },
+    {
         "block": "scroll-trigger"
     },
     {
