@@ -1,10 +1,35 @@
 module.exports = {
     block: 'page',
-    title: 'N-scanner.ru',
+    title: 'n-scanner поиск недвижимости',
     favicon: '/favicon.ico',
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
-        {elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}},
+
+        {elem: 'meta', attrs: {name: 'charset', content: 'utf-8'}},
+        {elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width,initial-scale=1,shrink-to-fit=no'}},
+        {elem: 'meta', attrs: {'http-equiv': 'x-dns-prefetch-control', content: 'on'}},
+        {elem: 'meta', attrs: {'http-equiv': 'cache-control', content: 'no-cache'}},
+        {elem: 'meta', attrs: {'http-equiv': 'expires', content: '0'}},
+        {elem: 'meta', attrs: {'name': 'description', content: 'Мы собираем объявления с крупнейших в России сайтов в одном месте. Поиск жилья в России еще никогда не был таким удобным.'}},
+        {elem: 'meta', attrs: {'name': 'keywords', content: 'Недвижимость, аренда Недвижимости, покупка Недвижимости, продажа Недвижимости, квартира, дом, офис, жилая Недвижимость, коммерческая Недвижимость, город, обьявления, лучшая цена, вторичный рынок, новостройка, ипотека'}},
+        {elem: 'meta', attrs: {'property': 'keywords', content: 'Недвижимость, аренда Недвижимости, покупка Недвижимости, продажа Недвимости, квартира, дом, офис, жилая Недвижимость, коммерческая Недвижимость, город, обьявления, лучшая цена, вторичный рынок, новостройка, ипотека'}},
+        {elem: 'meta', attrs: {'property': 'og:type', content: 'website'}},
+        {elem: 'meta', attrs: {'property': 'og:locale', content: 'ru_RU'}},
+
+        {elem: 'meta', attrs: {'property': "og:title", 'content': "n-scanner поиск недвижимости"}},
+        {elem: 'meta', attrs: {'property': "og:url", 'content': "https://n-scanner.ru"}},
+        {elem: 'meta', attrs: {'property': "og:site_name", 'content': "n-scanner поиск недвижимости"}},
+        {elem: 'meta', attrs: {'property': "og:description", 'content': "Мы собираем объявления с крупнейших в России сайтов в одном месте. Поиск жилья в России еще никогда не был таким удобным."}},
+        {elem: 'meta', attrs: {'property': "og:url", 'content': "https://n-scanner.ru"}},
+        {elem: 'meta', attrs: {'property': "og:image", 'content': "..."}},
+
+        {elem: 'meta', attrs: {'name': "twitter:card", 'content': "summary_large_image"}},
+        {elem: 'meta', attrs: {'name': "twitter:title", 'content': "n-scanner поиск недвижимости"}},
+        {elem: 'meta', attrs: {'name': "twitter:description", 'content': "Мы собираем объявления с крупнейших в России сайтов в одном месте. Поиск жилья в России еще никогда не был таким удобным."}},
+        {elem: 'meta', attrs: {'name': "twitter:image:src", 'content': "https://n-scanner.ru"}},
+        {elem: 'meta', attrs: {'name': "twitter:url", 'content': "https://n-scanner.ru"}},
+        {elem: 'meta', attrs: {'name': "twitter:domain", 'content': "n-scanner.ru"}},
+
         {elem: 'css', url: 'index.min.css'},
         {elem: 'js', url: 'vendor/scrolltrigger-classes/ScrollTrigger.js'},
         {elem: 'js', content:
